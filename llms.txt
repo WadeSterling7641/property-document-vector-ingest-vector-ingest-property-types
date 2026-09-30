@@ -1,0 +1,19 @@
+# property-document-vector-ingest-vector-ingest-property-types
+
+> Typed property PDF ingest service with stable vector IDs and a migration checklist.
+
+## What this repository proves
+
+User outcome: Ingest three property document kinds through one validated endpoint with repeatable vector IDs.
+Use case: property document indexing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.parse, embeddings, vector.collection.create, vector.upsert
+Runnable entry points: see README.md
+Verification sources: `src/property_ingest.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

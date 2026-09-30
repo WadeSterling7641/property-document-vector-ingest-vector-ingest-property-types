@@ -1,0 +1,20 @@
+{
+  "name": "property-document-vector-ingest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/property_ingest.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/property_ingest.test.ts"
+  },
+  "dependencies": {
+    "openai": "^4.104.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
